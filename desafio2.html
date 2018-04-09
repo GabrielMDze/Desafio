@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="txt">
+    <br>
+    <input type="button" id="btn">
+    <script>
+        var aeeehooo = document.getElementById("txt")
+            prompt("Excreva uma frase e sabera se é um Polindromo");
+        function frasePalindromo(fraseUser) {
+            fraseUser = aeeehooo.toLowerCase().replace(/\s/g, "");
+            fraserReverse = fraseUser.split("").reverse().toString();
+            for (var i = 0; i < ((fraserReverse.length) - 1); i++) {
+                fraserReverse = fraserReverse.replace(",", "");
+            };
+            if (fraseUser == fraserReverse) {
+                resultado = "é um Palindromo";
+            }
+            else {
+                resultado = "não um Palindromo";
+            }
+            document.write("A sua frase " + resultado);
+        }
+        frasePalindromo(fraseUser);
+    </script>
+</body>
+
+</html>
